@@ -3,14 +3,16 @@
 ###
 
 # Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
+compass_config do |config|
+  config.output_style = :compact
+end
 
 ###
 # Page options, layouts, aliases and proxies
 ###
 
+page "/project/*", :layout => "project"
+###
 # Per-page layout changes:
 #
 # With no layout
@@ -36,15 +38,20 @@
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
-#   def some_helper
-#     "Helping"
+#   def test(project)
+#     data.project.test.each do |y| 
+#     end
 #   end
+# end
+
+# data.work.projects.each do |project|
+#   proxy "/#{project.slug}.html", "/project.html", :locals => { :project => project }, :ignore => true
 # end
 
 set :css_dir, 'stylesheets'
@@ -52,6 +59,8 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
+
+set :partials_dir, 'layouts/partials'
 
 # Build-specific configuration
 configure :build do

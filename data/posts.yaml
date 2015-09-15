@@ -1,0 +1,10 @@
+test:
+- title: "test"
+  slug: "testtest"
+  date: "September 11th"
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ultricies eros, ut interdum dui. Aenean quis diam in quam mollis mattis id eget odio. Nulla mollis ligula ipsum. Vestibulum eget sodales libero, fermentum lacinia massa. Aliquam justo velit, laoreet non faucibus et, ullamcorper sit amet nisi."
+soundesign:
+- title: "Sound Design"
+  slug: "sounddesign"
+  date: "September 14th"
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ultricies eros, ut interdum dui. Aenean quis diam in quam mollis mattis id eget odio. Nulla mollis ligula ipsum. Vestibulum eget sodales libero, fermentum lacinia massa. Aliquam justo velit, laoreet non faucibus et, ullamcorper sit amet nisi."

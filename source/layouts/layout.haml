@@ -1,0 +1,22 @@
+<!doctype html>
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0, user-scalable=no"}
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+
+    %title= current_page.data.title || "Middleman"
+
+    %meta{ name: "description", content: "" }
+    %meta{ name: "keywords", content: "" }
+    %meta{ name: "author", content: "" }
+    %script{ :src =>"//use.typekit.net/iqh6ucz.js"}
+    :javascript
+      {Typekit.load({ async: true });}catch(e){}
+
+    = stylesheet_link_tag "main"
+    = javascript_include_tag  "all"
+
+  %body
+    .wrap
+      ~ yield
