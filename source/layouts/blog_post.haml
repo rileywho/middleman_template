@@ -20,6 +20,5 @@
   %body
     .wrap
       ~ yield
-      - data.posts.test.each do | foo |
-      / I would Like to replace "test" with the current title of the page, which would be defined by Frontmatter
+      - data.posts[current_page.data.title].each do | foo |
         %h1= foo["title"]
